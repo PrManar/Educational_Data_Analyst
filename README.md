@@ -2,9 +2,9 @@
 
 ## 📌 Overview
 
-This project focuses on integrating and preparing educational data from multiple regions in Saudi Arabia. The data was sourced from the official open data platform and then combined into a single, analysis-ready dataset.
+This project focuses on integrating educational datasets from multiple regions in Saudi Arabia into a single unified dataset, followed by building an interactive Power BI dashboard.
 
-The final dataset was used to build an interactive dashboard in Power BI.
+The data was sourced from the official Saudi Open Data Platform and transformed for analysis and visualization.
 
 ---
 
@@ -20,11 +20,11 @@ Each dataset was originally provided per region and already cleaned individually
 
 ## 🎯 Objectives
 
-* Combine multiple regional datasets into one unified dataset
-* Standardize data across all regions
-* Translate Arabic content into English
-* Prepare the dataset for visualization
-* Build an interactive Power BI dashboard
+* Combine multiple regional datasets into one dataset
+* Standardize structure across all files
+* Translate Arabic data into English
+* Prepare data for visualization
+* Build an interactive dashboard using Power BI
 
 ---
 
@@ -37,91 +37,86 @@ Each dataset was originally provided per region and already cleaned individually
 
 ---
 
-## 🗂️ Dataset Description
-
-The dataset includes:
-
-* Number of students
-* Number of teachers
-* School-related information
-* Regions (e.g., Eastern, Alahsa)
-* Gender (Boys / Girls)
-* Academic years
-
----
-
 ## ⚙️ Data Preparation Process
 
 ### 1. Data Collection
 
-* Downloaded datasets from the Saudi Open Data Platform
-* Each file represents a specific region
+* Downloaded datasets for different regions from the Open Data Platform
 
-### 2. Data Integration (Python - Google Colab)
+### 2. Data Integration (Python)
 
 * Combined all regional datasets into one dataset
-* Ensured consistent column structure across all files
+* Ensured consistent column structure
 
 ### 3. Data Transformation
 
-* Translated Arabic values into English
+* Translated Arabic values to English
   (e.g., الشرقية → Eastern, الأحساء → Alahsa)
 * Converted Arabic numbers to standard numeric format
 * Standardized column names
 
-### 4. Data Cleaning in Power BI
+### 4. Data Cleaning (Power BI)
 
-* Imported dataset into Power BI
 * Used **Power Query** to:
 
   * Handle missing values
   * Remove empty rows
-  * Fix data inconsistencies
+  * Fix inconsistencies
 
 ### 5. Final Output
 
-* Clean and unified dataset ready for analysis:
+* Clean dataset ready for analysis:
   `Final_cleaned_data.csv`
 
 ---
 
-## 📊 Dashboard (Power BI)
+## 📊 Dashboard
 
-The dashboard includes:
+The Power BI dashboard includes:
 
-* **Total Students (KPI)**
-* **Students by Gender (Pie Chart)**
-* **Students by Region (Bar Chart)**
-* **Teachers by Region & Gender (Stacked Chart)**
-* Additional insights (e.g., teachers, schools)
+* Total Students (KPI)
+* Students by Gender
+* Students by Region
+* Teachers by Region & Gender
+* Additional insights (teachers, schools)
 
----
-
-## 📈 Key Insights
-
-* Comparison of student distribution across regions
-* Gender-based analysis (Boys vs Girls)
-* Regional education trends
-
----
-
-## How to Use
-
-1. Open the notebook in Google Colab
-2. Run all cells step by step
-3. Generate the combined dataset
-4. Open Power BI
-5. Load the dataset and build visualizations
+📸 *See screenshot in the Dashboard folder*
 
 ---
 
 ## 📁 Project Structure
 
 ```
-├── Educational_Data_Preparation.ipynb
-├── Final_cleaned_data.csv
+├── 📁 dashboard/
+│   ├── dashboard_screenshot.png
+│   └── dashboard_link.txt
+│
+├── 📁 code/
+│   └── Educational_Data_Preparation.ipynb
+│
+├── 📁 data/
+│   └── Final_cleaned_data.csv
+│
 └── README.md
 ```
+
+---
+
+## 📈 Key Insights
+
+* Student distribution across regions
+* Gender comparison (Boys vs Girls)
+* Regional trends in education data
+
+---
+
+## 🚀 How to Use
+
+1. Open the notebook from the `code/` folder in Google Colab
+2. Run all cells to generate the dataset
+3. Open Power BI
+4. Load the dataset from the `data/` folder
+5. Explore or rebuild the dashboard
 
 ---
 
@@ -133,8 +128,11 @@ The dashboard includes:
 
 ## ⭐ Notes
 
-* The original datasets were already cleaned per region
-* This project focuses on **data integration, transformation, and visualization**
-* Missing data issues were handled inside Power BI by using Power Query
+* Original datasets were already cleaned per region
+* This project focuses on **data integration and visualization**
+* Missing data issues were resolved using Power Query in Power BI
+
+---
+
 
 ---
