@@ -89,7 +89,7 @@ The Power BI dashboard includes:
 ```
 ├── 📁 dashboard/
 │   ├── dashboard_screenshot.png
-│   └── dashboard_link.txt
+│   
 │
 ├── 📁 code/
 │   └── Educational_Data_Preparation.ipynb
